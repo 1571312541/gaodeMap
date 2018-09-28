@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高德地图</title>
+    <script src="../../resources/jquery-1.11.1.min.js"></script>
+    <!--AMap.AdvancedInfoWindow 信息窗体插件-->
+    <!--AMap.Geocoder 地理编码与逆地理编码服务，用于地址描述与坐标间的相互转换-->
+    <!--AMap.PlaceSearch 地点搜索服务插件，提供某一特定地区的位置查询服务-->
+    <script src="https://webapi.amap.com/maps?v=1.4.10&key=a8e3f1d526511281bac2edf977a6ca03&plugin=AMap.AdvancedInfoWindow&plugin=AMap.Geocoder&plugin=AMap.PlaceSearch"></script>
+    <!-- UI组件库 1.0 -->
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+</head>
+<style type="text/css">
+    .info-title {
+        color: white;
+        font-size: 14px;
+        background-color:blue;
+        line-height: 26px;
+        padding: 0px 0 0 6px;
+        font-weight: lighter;
+        letter-spacing: 1px
+    }
+    .info-content {
+        font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+        padding: 4px;
+        color: #666666;
+        line-height: 23px;
+    }
+    .info-content img {
+        float: left;
+        margin: 3px;
+    }
+</style>
+<body>
+
+
+<div id="container"></div>
+
+
+<script type="text/javascript" src="gaodeMap2.js"></script>
+</body>
+</html>
