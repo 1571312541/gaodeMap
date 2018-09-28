@@ -74,12 +74,6 @@ $(function () {
 
 //------------------------------------------------------------------------------------------
 
-    //实例化信息窗体
-    /*  var title = '方恒假日酒店<span style="font-size:11px;color:#F00;">价格:318</span>',
-      content = [];
-      content.push("<img src='http://tpc.googlesyndication.com/simgad/5843493769827749134'>地址：北京市朝阳区阜通东大街6号院3号楼东北8.3公里");
-      content.push("电话：010-64733333");
-      content.push("<a href='https://ditu.amap.com/detail/B000A8URXB?citycode=110105'>详细信息</a>");*/
     //信息窗体
     var content='<div class="info-title">高德地图</div><div class="info-content">' +
         '<img src="https://webapi.amap.com/images/amap.jpg">' +
@@ -123,13 +117,13 @@ $(function () {
     })
 
 
-    /*  status: complete  no_data
-        result :
+    /*  status打印内容: complete 查到数据 / no_data 未查到数据
+        result打印内容 :
         info: "OK"
         regeocode: Object { addressComponent: {…}, formattedAddress: "北京市东城区东华门街道天安门", roads: (3) […], … }
         <prototype>: Object { … }
     */
-    /* e ：
+    /* e打印内容 ：
         lnglat: Object { N: 39.900518342783364, O: 116.37525459766391, lng: 116.375255, … }
         pixel: Object { x: 712, y: 317 }
         target: Object { _amap_id: 1, id: 1, CLASS_NAME: "AMap.Map", … }
@@ -141,9 +135,9 @@ $(function () {
 
 
 //------------------------------------------------------------------------------------------
+    //添加右键菜单内容项
     var contextmenu=new AMap.ContextMenu();
     var pos=[];
-    // 添加右键菜单内容项
     contextmenu.addItem("放大",function () {
         map.zoomIn();
     },0);
